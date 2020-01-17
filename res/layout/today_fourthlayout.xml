@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--第三个Today展示布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/today_layout_fourth"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/todayimagebg"
+        >
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/today_video_1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            >
+
+        </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/today_video_1"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="要你好看"
+                android:textSize="15sp"
+                android:fadeScrollbars="false"
+                android:fadingEdge="none"
+                android:textColor="@color/colorDeepBalck"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="行程助手—处境旅游规划专家"
+                android:textSize="25sp"
+                android:maxLines="2"
+                android:textColor="@color/colorDeepBalck"
+                android:layout_below="@id/tv_1"
+
+                >
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

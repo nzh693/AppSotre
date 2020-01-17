@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activty_layout_detail"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.AppDetailSynthesisActivity">
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/scroll_detail"
+        android:layout_width="match_parent"
+        android:isScrollContainer="true"
+        android:screenReaderFocusable="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            >
+            //沉浸式图片背景
+            <ImageView
+                android:id="@+id/detail_head_im"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/appbg_5"
+                android:scaleType="centerCrop"
+                >
+            </ImageView>
+            <View
+                android:id="@+id/detail_position_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/detail_head_im"
+                >
+
+            </View>
+
+            //主要部分
+            <RelativeLayout
+                android:id="@+id/detail_Main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_position_line"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                //app_信息
+                <LinearLayout
+                    android:id="@+id/app_Detail_message_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <include  android:id="@+id/detail_quote_message" layout="@layout/app_detali_head"></include>
+                </LinearLayout>
+
+                //app图片水平滚动
+                <LinearLayout
+                    android:id="@+id/app_detail_srcollImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/app_Detail_message_1"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RV_scrollVerticalImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                //评分以及评论
+                <LinearLayout
+                    android:id="@+id/detail_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/app_detail_srcollImage1"
+                    android:layout_marginTop="25dp"
+                    >
+                    <include  layout="@layout/app_detail_comment">
+
+                    </include>
+                </LinearLayout>
+
+                //信息
+                <LinearLayout
+                    android:id="@+id/detail_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/detail_comment"
+                    android:layout_marginTop="25dp"
+                    >
+                    <include  layout="@layout/app_detail_message">
+
+                    </include>
+                </LinearLayout>
+
+
+                //推荐精选app水平滚动
+                <LinearLayout
+                    android:id="@+id/app_detail_srcollImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/detail_message"
+                    android:orientation="vertical"
+                    >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/colorDarkBalck">
+
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="精选"
+                        android:textColor="@color/colorDeepBalck"
+                        android:textSize="20dp"
+                        android:layout_marginTop="8dp"
+                        ></TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RV_scrollVerticalImage_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                //更多来自该公司的APP
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/app_detail_srcollImage2"
+                    android:background="#F8F8FF"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/Rlayout_tile_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/game_line_1"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        >
+                        <TextView
+                            android:id="@+id/tv_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="更多来自Sleep Cycle AB 的App"
+                            android:textColor="@color/colorDeepBalck"
+                            android:textSize="20sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看全部"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="15sp"
+                            android:layout_alignParentRight="true"
+                            >
+
+                        </TextView>
+                    </RelativeLayout>
+
+                    <include layout="@layout/app_detail_relativeapp"
+                        >
+                    </include>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+   //悬浮头部
+    <RelativeLayout
+        android:id="@+id/detail_head_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <include android:id="@+id/detail_myhead" layout="@layout/app_detail_hidehead"></include>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

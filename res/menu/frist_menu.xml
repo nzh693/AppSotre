@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/item_tab1"
+            android:icon="@drawable/today"
+            android:title="Today" />
+        <item
+            android:id="@+id/item_tab2"
+            android:icon="@drawable/game"
+            android:title="游戏"
+            />
+        <item
+            android:id="@+id/item_tab3"
+            android:icon="@drawable/app"
+            android:title="App" />
+
+        <item
+            android:id="@+id/item_tab4"
+            android:icon="@drawable/update"
+            android:title="更新" />
+        <item
+           android:id="@+id/item_tab5"
+           android:icon="@drawable/search"
+            android:title="搜索" />
+
+
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--第三个Today展示布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/today_layout_three"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/todayimagebg"
+        >
+
+        <ImageView
+            android:id="@+id/today_imagebg"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@mipmap/detail_image_1"
+            android:scaleType="centerCrop"
+            >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/today_imagebg"
+            >
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="精选APP"
+                android:textSize="13sp"
+                android:textColor="@color/colorDeepBalck"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="泰坦：众神之战"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textColor="@color/colorDeepBalck"
+                android:layout_below="@id/tv_1"
+                android:layout_marginTop="5dp"
+
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="策略卡牌游戏"
+                android:textSize="15sp"
+                android:textColor="@color/colorDarkBalck"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/tv_2"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

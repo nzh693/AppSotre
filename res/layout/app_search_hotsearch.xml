@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--热门搜索-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="热门搜索"
+            android:textSize="20dp"
+            android:textColor="@color/colorDeepBalck"
+            >
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkBalck"
+
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hidden folks"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue"
+            >
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkBalck"
+
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sapce cycle"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue"
+            >
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkBalck"
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="爱奇艺"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue"
+            >
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkBalck"
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="qq"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue"
+            >
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkBalck"
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="腾讯视频"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue"
+            >
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkBalck"
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="优酷"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue"
+            >
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkBalck"
+            >
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="王牌战士"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

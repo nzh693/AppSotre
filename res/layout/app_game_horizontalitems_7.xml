@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <TextView
+           android:id="@+id/app_game_tile3"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:textSize="14dp"
+           android:textDirection="firstStrong"
+           android:maxLines="1"
+           android:ellipsize="end"
+           android:text="奔跑跳跃大猫咪 夺回失窃星星"
+           android:textColor="@color/colorDarkBalck"
+           android:layout_below="@id/app_game_tile2"
+           >
+       </TextView>
+       <LinearLayout
+           android:layout_width="360dp"
+           android:layout_height="200dp"
+           android:orientation="vertical"
+           android:background="@drawable/todayimagebg"
+           >
+
+           <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+               android:id="@+id/app_game_vide"
+               android:layout_width="360dp"
+               android:layout_height="200dp"
+
+               >
+
+           </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/Rlayout_app2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_below="@id/Rlayout_app1"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp"
+               >
+               //app图标
+               <com.makeramen.roundedimageview.RoundedImageView
+                   android:id="@+id/riv-2"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@mipmap/game_2"
+                   app:riv_corner_radius_bottom_left="50dp"
+                   app:riv_corner_radius_top_left="50dp"
+                   app:riv_corner_radius_bottom_right="50dp"
+                   app:riv_corner_radius_top_right="50dp"
+                   >
+               </com.makeramen.roundedimageview.RoundedImageView>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="10dp"
+                   android:id="@+id/tv_app_messages_2"
+
+                   >
+                   <TextView
+                       android:id="@+id/tv_app_message_2"
+                       android:layout_width="180dp"
+                       android:layout_height="wrap_content"
+                       android:text="Rocket Build"
+                       android:textColor="@color/colorDarkBalck"
+                       android:textSize="16sp"
+                       android:ellipsize="end"
+                       android:maxLines="1"
+                       >
+                   </TextView>
+                   <TextView
+                       android:id="@+id/tv_app_submessage_2"
+                       android:layout_width="180dp"
+                       android:layout_height="wrap_content"
+                       android:text="建造自己的奇幻世界"
+                       android:textColor="@color/colorDarkBalck"
+                       android:textSize="13sp"
+                       android:ellipsize="end"
+                       android:maxLines="1"
+                       >
+                   </TextView>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/tv_app_message_1"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="50dp"
+                   >
+                   <Button
+                       android:id="@+id/btm_get_2"
+                       android:layout_width="70dp"
+                       android:layout_height="30dp"
+                       android:text="$6.00"
+                       android:textSize="15dp"
+                       android:textColor="@color/colorBlue"
+                       android:layout_marginTop="8dp"
+                       android:background="@drawable/button_getbg"
+                       android:layout_toRightOf="@id/tv_app_message_1"
+                       android:layout_gravity="center"
+
+                       >
+                   </Button>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="App内购买项目"
+                       android:textSize="11dp"
+                       android:layout_marginTop="2dp"
+                       android:maxLines="1"
+                       android:layout_gravity="center"
+                       >
+
+                   </TextView>
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+</LinearLayout>

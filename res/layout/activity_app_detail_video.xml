@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AppdDetailVideoActivity">
+
+    <Button
+        android:id="@+id/app_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加updataApp数据"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/app_add_searchItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加searchItem数据"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/app_add_searchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加searchResult数据"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/app_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除所有pudataAPP数据"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/app_delete_all_searchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除所有searchResult"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/app_delete_all_searchItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除所有searchItems"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+
+
+    <TextView
+        android:id="@+id/app_showData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂无数据"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+    </TextView>
+
+</LinearLayout>

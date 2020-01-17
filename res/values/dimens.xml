@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="driverLineHeight">1dp</dimen>
+    <dimen name="driverLineHeight5">5dp</dimen>
+    <dimen name="driverLineHeight20">20dp</dimen>
+    <dimen name="driverLineHeight50">50dp</dimen>
+    <dimen name="driverLineHeight100">100dp</dimen>
+</resources>

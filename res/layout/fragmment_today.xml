@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    //本页面存在五种布局
+    //滚动
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLucencyWhite"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            //头部
+            <LinearLayout
+                android:id="@+id/head_TodaY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                >
+                //日期和标题
+                <LinearLayout
+                    android:id="@+id/RL_dateAndTile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/head_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11月16日 星期六"
+                        android:textSize="14sp"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/head_tile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today"
+                        android:textSize="25dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorDeepBalck"
+                        android:layout_marginTop="8dp"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/head_image_personalCenter"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/personal"
+                    android:layout_marginLeft="220dp"
+                    android:scaleType="centerCrop"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+
+            //主要展示内容
+            <RelativeLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/head_TodaY"
+                android:paddingLeft="20dp"
+
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/recycleView_Today"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recycleView_Today"
+                    >
+                    <include layout="@layout/app_bottom"></include>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

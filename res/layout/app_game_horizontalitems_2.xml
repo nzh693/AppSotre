@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--游戏悬浮1-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="240dp"
+        android:background="@drawable/todayimagebg"
+        >
+
+        //app1 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/app_camera"
+                    app:riv_corner_radius_bottom_left="15dp"
+                    app:riv_corner_radius_top_left="15dp"
+                    app:riv_corner_radius_bottom_right="15dp"
+                    app:riv_corner_radius_top_right="15dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:id="@+id/tv_app_message_1"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="最美照片来自这里"
+                    android:textColor="@color/colorDarkBalck"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="12dp"
+                    >
+                </TextView>
+
+                <Button
+                    android:id="@+id/btm_get"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="获取"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/button_getbg"
+                    >
+                </Button>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="60dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_below="@id/Rlayout_app1"
+                android:layout_marginTop="10dp"
+                >
+            </View>
+
+        </LinearLayout>
+
+
+        //app2 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_app1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/app_wechat"
+                    app:riv_corner_radius_bottom_left="15dp"
+                    app:riv_corner_radius_top_left="15dp"
+                    app:riv_corner_radius_bottom_right="15dp"
+                    app:riv_corner_radius_top_right="15dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:id="@+id/tv_app_message_2"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="这是一个神奇的软件，既可以，又可以"
+                    android:textColor="@color/colorDarkBalck"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="12dp"
+                    >
+                </TextView>
+
+                <Button
+                    android:id="@+id/btm_get2"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="获取"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/button_getbg"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_below="@id/Rlayout_app1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                >
+            </View>
+
+        </LinearLayout>
+
+
+        //app3 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_app2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/app_jindong"
+                    app:riv_corner_radius_bottom_left="15dp"
+                    app:riv_corner_radius_top_left="15dp"
+                    app:riv_corner_radius_bottom_right="15dp"
+                    app:riv_corner_radius_top_right="15dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:id="@+id/tv_app_message_3"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="下单下单了!"
+                    android:textColor="@color/colorDarkBalck"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    >
+                </TextView>
+
+                <Button
+                    android:id="@+id/btm_get3"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="获取"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/button_getbg"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

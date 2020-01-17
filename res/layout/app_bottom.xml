@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    //底部
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        >
+        <Button
+            android:id="@+id/bottom_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="兑换"
+            android:textSize="18sp"
+            android:textColor="#1196EE"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_bottom"
+            >
+        </Button>
+        <Button
+            android:id="@+id/bottom_bt2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="为App ID 充值"
+            android:textSize="18sp"
+            android:textColor="#1196EE"
+            android:background="@drawable/button_bottom"
+            android:layout_below="@id/bottom_bt1"
+            >
+        </Button>
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorDarkBalck"
+            android:layout_below="@id/bottom_bt2"
+            >
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="条款与条件 >"
+            android:textSize="12dp"
+            android:layout_below="@+id/bottom_line"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

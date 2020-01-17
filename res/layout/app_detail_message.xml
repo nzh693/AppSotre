@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colorDarkBalck"
+        android:layout_below="@id/detail_message_privacy"
+        android:layout_marginBottom="15dp"
+        >
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信息"
+        android:textSize="20dp"
+        android:textColor="@color/colorDeepBalck">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        >
+        <TextView
+            android:id="@+id/detail_message_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="供应商"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/detail_message_fromContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sllep Cycle AB"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/colorDeepBalck"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_from"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:id="@+id/detail_message_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大小"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/detail_message_sizeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1078.2M"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/colorDeepBalck"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_size"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        >
+        <TextView
+            android:id="@+id/detail_message_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类别"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/detail_message_typeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="将康健美"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/colorDeepBalck"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_type"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        >
+        <TextView
+            android:id="@+id/detail_message_compatibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兼容性"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/detail_message_compatibilityContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可在此iPhone上使用"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/colorDeepBalck"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_compatibility"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        >
+        <TextView
+            android:id="@+id/detail_message_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语言"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/detail_message_languageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="俄文he其他12种语言"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/colorDeepBalck"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_language"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/detail_message_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄分级"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/detail_message_ageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:text="+4"
+            android:textColor="@color/colorDeepBalck"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_age"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/detail_message_inner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App 内购买项目"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:text="是"
+            android:textColor="@color/colorDeepBalck"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_inner"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/detail_message_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版权"
+            android:textColor="@color/colorDarkBalck"
+            android:textSize="15dp"
+            >
+        </TextView>
+        <TextView
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:text="2018 Sleep CycleAB"
+            android:textColor="@color/colorDeepBalck"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_power"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/detail_message_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发者网站"
+            android:textColor="@color/colorBlue"
+            android:textSize="15dp"
+            >
+        </TextView>
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/detail_south"
+            android:layout_alignParentRight="true"
+            >
+
+
+        </ImageView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorMaxlitterDark"
+            android:layout_below="@id/detail_message_web"
+            android:layout_marginTop="8dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/detail_message_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐私政策"
+            android:textColor="@color/colorBlue"
+            android:textSize="15dp"
+            >
+        </TextView>
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/detail_lefthand"
+            android:layout_alignParentRight="true"
+            >
+
+
+        </ImageView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorDarkBalck"
+            android:layout_below="@id/detail_message_privacy"
+            android:layout_marginTop="28dp"
+            >
+
+        </View>
+    </RelativeLayout>
+
+    //支持
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="25dp"
+        >
+
+        <TextView
+            android:id="@+id/detail_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支持"
+            android:textSize="20dp"
+            android:textColor="@color/colorDeepBalck"
+
+            >
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/detail_support_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/detail_share"
+            android:layout_below="@+id/detail_support"
+            android:layout_marginTop="20dp"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家人共享"
+            android:textSize="16dp"
+            android:textColor="@color/colorlitterBalck"
+            android:layout_toRightOf="@id/detail_support"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="25dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平时很多时候都会用到取色器，其中有在线取色器，但是使用内网的时候往往是没法使用在线取色器这时候就需要使用安装桌面版取色器。下面是经过多次查找获取的比较好用的取色器，一款在线一款应用："
+            android:textSize="15dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_toRightOf="@+id/detail_support_iv"
+            >
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

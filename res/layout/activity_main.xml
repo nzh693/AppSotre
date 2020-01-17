@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/linearAll_Game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        //主要内容（切换Fragment）
+        <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="610dp">
+                <FrameLayout
+                    android:id="@+id/f_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    >
+                </FrameLayout>
+        </LinearLayout>
+
+        //底部导航栏
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_content"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#e4e4e4"
+            app:itemBackground="@null"
+            app:itemIconTint="@drawable/bottom_menue"
+            app:itemTextColor="@drawable/bottom_menue"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/frist_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

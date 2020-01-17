@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/update_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/head_hide_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <include android:id="@+id/hidennUpdate" layout="@layout/app_hidetop"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+            //更新头部
+            <RelativeLayout
+                android:id="@+id/head_all_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/head_tile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更新"
+                    android:textSize="25dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorDeepBalck"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal"
+                    >
+                </TextView>
+
+
+
+                <ImageView
+                    android:id="@+id/head_image_personalCenter"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/personal"
+                    android:layout_marginLeft="310dp"
+                    android:scaleType="centerCrop"
+
+                    >
+
+                </ImageView>
+                <View
+                    android:id="@+id/update_distanceLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/head_image_personalCenter"
+                    >
+
+                </View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/update_tv_tile1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用更新"
+                    android:textColor="@color/colorDeepBalck"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/update_tv_tile2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看全部"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="310dp"
+                    >
+
+                </TextView>
+                <View
+                    android:id="@+id/positon_update_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    >
+
+                </View>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/update_recycleView_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_tv_tile1"
+                    android:layout_marginTop="10dp"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/update_tv2_tile1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="近期更新"
+                    android:textColor="@color/colorDeepBalck"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/update_recycleView_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_tv2_tile1"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

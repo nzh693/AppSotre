@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/head_hide_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <include android:id="@+id/hidennGame" layout="@layout/app_hidetop"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            //游戏头部
+            <RelativeLayout
+                android:id="@+id/head_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/head_tile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="游戏"
+                    android:textSize="25dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorDeepBalck"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal"
+                    >
+                </TextView>
+
+
+
+                <ImageView
+                    android:id="@+id/head_image_personalCenter"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/personal"
+                    android:layout_marginLeft="310dp"
+                    android:scaleType="centerCrop"
+                    >
+
+                </ImageView>
+
+            </RelativeLayout>
+
+
+
+
+
+
+            //游戏主体内容
+            <LinearLayout
+                android:id="@+id/game_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="-25dp"
+                >
+                <!--内容水平滚动1-->
+                <RelativeLayout
+                    android:id="@+id/linear_content_horizontalScroll"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <View
+                        android:id="@+id/positon_game_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        >
+
+                    </View>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView_gameHorizontalScroll_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <!--内容水平滚动2-->
+                <!--标题:我们都在玩-->
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <View
+                        android:id="@+id/game_line_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="@color/colorDarkBalck"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="20dp"
+
+                        >
+
+                    </View>
+                    <LinearLayout
+                        android:id="@+id/Rlayout_tile_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/game_line_1"
+                        >
+                        <TextView
+                            android:id="@+id/tv_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="热门游戏"
+                            android:textColor="@color/colorDeepBalck"
+                            android:textSize="20sp"
+                            >
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看全部"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="220dp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView_gameHorizontalScroll_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Rlayout_tile_1"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <!--内容水平滚动3-->
+                <!--标题:新鲜游戏-->
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <View
+                        android:id="@+id/game_line_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="@color/colorDarkBalck"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="20dp"
+                        >
+
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/Rlayout_tile_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/game_line_2"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="新鲜游戏"
+                            android:textColor="@color/colorDeepBalck"
+                            android:textSize="20sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看全部"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="220dp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView_gameHorizontalScroll_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Rlayout_tile_3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="2dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <!--内容水平滚动4-->
+                <!--标题:特别活动和更新-->
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <View
+                        android:id="@+id/game_line_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="@color/colorDarkBalck"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="20dp"
+                        >
+                    </View>
+
+
+                    <LinearLayout
+                        android:id="@+id/Rlayout_tile_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/game_line_3"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="特别活动和更新"
+                            android:textColor="@color/colorDeepBalck"
+                            android:textSize="20sp"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView_gameHorizontalScroll_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_below="@id/Rlayout_tile_4"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <!--内容水平滚动5-->
+                <!--更多你可能喜欢的游戏-->
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+                    <View
+                        android:id="@+id/game_line_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="@color/colorDarkBalck"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="20dp"
+                        >
+
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/Rlayout_tile_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/game_line_4"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="付费排行榜"
+                            android:textColor="@color/colorDeepBalck"
+                            android:textSize="20sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看全部"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="220dp"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView_gameHorizontalScroll_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_below="@id/Rlayout_tile_5"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <include layout="@layout/app_game_type" android:visibility="visible"></include>
+
+
+                <!--内容水平滚动6-->
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <View
+                        android:id="@+id/game_line_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="@color/colorDarkBalck"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="20dp"
+                        >
+
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/Rlayout_tile_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/game_line_5"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最佳更新"
+                            android:textColor="@color/colorDeepBalck"
+                            android:textSize="20sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看全部"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="220dp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView_gameHorizontalScroll_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_below="@id/Rlayout_tile_6"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+
+
+                <!--内容水平滚动7-->
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <View
+                        android:id="@+id/game_line_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="@color/colorDarkBalck"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="20dp"
+                        >
+
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/Rlayout_tile_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/game_line_6"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="今天玩什么"
+                            android:textColor="@color/colorDeepBalck"
+                            android:textSize="20sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看全部"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="220dp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView_gameHorizontalScroll_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_below="@id/Rlayout_tile_7"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <include layout="@layout/app_game_fastlink"></include>
+
+                <include layout="@layout/app_bottom"></include>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/changColor"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+
+        <ImageView
+            android:id="@+id/im_backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_icon_left"
+            android:paddingTop="20dp"
+            android:background="#00000000"
+            >
+
+        </ImageView>
+        <TextView
+            android:id="@+id/hide_tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App"
+            android:textColor="@color/colorBlue"
+            android:textSize="24dp"
+            android:paddingTop="27dp"
+            android:paddingBottom="11dp"
+            android:background="#00000000"
+            android:layout_toRightOf="@+id/im_backIcon"
+            >
+        </TextView>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/detail_headBt_hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112dp"
+            android:visibility="invisible"
+            android:layout_marginTop="30dp"
+
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/app_douban"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App内购买项目"
+                android:textSize="8dp"
+                android:layout_marginLeft="50dp"
+                >
+            </TextView>
+
+            <Button
+                android:id="@+id/btm_headdownLoad"
+                android:layout_width="80dp"
+                android:layout_height="33dp"
+                android:text="获取"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/button_getbgbule"
+                android:layout_marginLeft="3dp"
+                >
+            </Button>
+
+            <ProgressBar
+                android:id="@+id/btm_headdownprogrss"
+                android:layout_width="80dp"
+                android:layout_height="33dp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/colorBlue"
+                >
+
+            </ProgressBar>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

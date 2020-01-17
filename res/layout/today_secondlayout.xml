@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--第二个Today展示布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/today_layout_second"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="430dp"
+        android:background="@drawable/todayimagebg"
+        android:padding="20dp">
+        //标题
+        <RelativeLayout
+            android:id="@+id/Rlayout_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生活解决方案"
+                android:textColor="@color/colorDarkBalck"
+                android:textSize="18sp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_1"
+                android:text="周年APP"
+                android:textColor="@color/colorDarkBalck"
+                android:textSize="28sp"
+                android:layout_marginTop="5dp"
+                >
+
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+
+        //app1 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_tile"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/game_2"
+                    app:riv_corner_radius_bottom_left="50dp"
+                    app:riv_corner_radius_top_left="50dp"
+                    app:riv_corner_radius_bottom_right="50dp"
+                    app:riv_corner_radius_top_right="50dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_app_messages_2"
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_app_message_1"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket Build"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="16sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_app_submessage_1"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="建造自己的奇幻世界"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="13sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_app_message_1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btm_get_1"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/tv_app_message_1"
+                        android:background="@drawable/button_getbg"
+                        android:text="获取"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="15dp"
+                        >
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/btm_headdownprogress_1"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/colorDarkBalck"
+                        >
+
+                    </ProgressBar>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App内购买项目"
+                        android:textSize="8dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_below="@id/Rlayout_app1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                >
+            </View>
+
+        </LinearLayout>
+
+
+        //app2 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_app1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <ImageView
+                    android:id="@+id/riv-2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/app_jindong"
+                    >
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_app_messages_3"
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_app_message_2"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket Build"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="16sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_app_submessage_2"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="建造自己的奇幻世界"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="13sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_app_message_1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btm_get_2"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/tv_app_message_2"
+                        android:background="@drawable/button_getbg"
+                        android:text="$6.00"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="15dp">
+
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/btm_headdownprogress_2"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/colorDarkBalck"
+                        >
+
+                    </ProgressBar>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App内购买项目"
+                        android:textSize="8dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_below="@id/Rlayout_app1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                >
+            </View>
+
+        </LinearLayout>
+
+
+        //app2 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_app2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/game_3"
+                    app:riv_corner_radius_bottom_left="50dp"
+                    app:riv_corner_radius_top_left="50dp"
+                    app:riv_corner_radius_bottom_right="50dp"
+                    app:riv_corner_radius_top_right="50dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_app_messages_4"
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_app_message_3"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket Build"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="16sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_app_submessage_3"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="建造自己的奇幻世界"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="13sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_app_message_3"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btm_get_3"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/tv_app_message_2"
+                        android:background="@drawable/button_getbg"
+                        android:text="$9.00"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="15dp"
+                        >
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/btm_headdownprogress_3"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/colorDarkBalck"
+                        >
+
+                    </ProgressBar>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App内购买项目"
+                        android:textSize="8dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_below="@id/Rlayout_app1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                >
+            </View>
+
+        </LinearLayout>
+
+
+
+        //app4 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_app3"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/game_4"
+                    app:riv_corner_radius_bottom_left="50dp"
+                    app:riv_corner_radius_top_left="50dp"
+                    app:riv_corner_radius_bottom_right="50dp"
+                    app:riv_corner_radius_top_right="50dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_app_messages_5"
+                    >
+                    <TextView
+                        android:id="@+id/tv_app_message_4"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket Build"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="16sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_app_submessage_4"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="建造自己的奇幻世界"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="13sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_app_message_4"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btm_get_4"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/tv_app_message_2"
+                        android:background="@drawable/button_getbg"
+                        android:text="获取"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="15dp"
+                        >
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/btm_headdownprogress_4"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/colorDarkBalck"
+                        >
+
+                    </ProgressBar>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App内购买项目"
+                        android:textSize="8dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

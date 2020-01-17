@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    //app1 内容
+    <LinearLayout
+        android:id="@+id/Rlayout_app1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        //内容
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            //app图标
+            <ImageView
+                android:id="@+id/riv-1"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/app_douban"
+
+                >
+
+            </ImageView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/riv-1"
+                >
+                <TextView
+                    android:id="@+id/tv_1_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="少年三国志2-升级就送FMVP"
+                    android:textSize="23dp"
+                    android:textColor="@color/colorDeepBalck"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="2"
+                    android:layout_gravity="center"
+                    >
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_1_subMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高福利卡牌王者续作"
+                    android:textSize="15dp"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="1"
+                    android:layout_below="@id/tv_1_message"
+                    android:layout_marginBottom="15dp"
+                    >
+
+                </TextView>
+
+                <ProgressBar
+                    android:id="@+id/btm_detail_downLoad_progress"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tv_1_subMessage"
+                    android:indeterminateTint="@color/colorBlue"
+                    android:visibility="invisible"
+                    >
+                </ProgressBar>
+
+
+                <Button
+                    android:id="@+id/btm_detail_downLoad"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="获取"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/button_getbgbule"
+                    android:layout_marginTop="7dp"
+                    android:layout_below="@id/tv_1_subMessage"
+                    >
+                </Button>
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App 内购买项目"
+                    android:textSize="11dp"
+                    android:textColor="@color/colorDarkBalck"
+                    android:layout_marginTop="15dp"
+                    android:maxLines="1"
+                    android:layout_toRightOf="@id/btm_detail_downLoad"
+                    android:layout_below="@id/tv_1_subMessage"
+                    android:layout_marginLeft="8dp"
+                    >
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/app_Detail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/app_detail"
+                    android:layout_below="@id/tv_1_subMessage"
+                    android:layout_toRightOf="@id/tv_type"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    >
+
+
+                </Button>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+            <LinearLayout
+                android:id="@+id/app_markLine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/app_mark_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.7"
+                    android:textSize="23dp"
+                    android:textColor="@color/colorDarkBalck"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/iV_stars_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/stars_balck"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="8dp"
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/iV_stars_2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/stars_balck"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="8dp"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/iV_stars_3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/stars_balck"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="8dp"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/iV_stars_4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/stars_balck"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="8dp"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/iV_stars_5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/stars_balck"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="8dp"
+                    >
+                </ImageView>
+
+
+
+                <TextView
+                    android:id="@+id/app_mark_typenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#42"
+                    android:textColor="@color/colorDarkBalck"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="50dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/app_mark_ageNums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="4+"
+                    android:textColor="@color/colorDarkBalck"
+                    android:textSize="23dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/app_markLine1"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/app_mark_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.93万个评分"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorDarkBalck"
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/app_mark_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教育"
+                    android:textColor="@color/colorDarkBalck"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="151dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/app_mark_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄"
+                    android:textColor="@color/colorDarkBalck"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="77dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

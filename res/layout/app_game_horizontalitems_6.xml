@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--游戏悬浮1-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="250dp"
+        android:background="@drawable/todayimagebg"
+        >
+
+        //app1 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/game_1"
+                    app:riv_corner_radius_bottom_left="50dp"
+                    app:riv_corner_radius_top_left="50dp"
+                    app:riv_corner_radius_bottom_right="50dp"
+                    app:riv_corner_radius_top_right="50dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_app_messages_1"
+                    android:layout_toRightOf="@id/riv-1"
+                    >
+                    <TextView
+                        android:id="@+id/tv_app_message_1"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket Build"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="16sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_app_submessage_1"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="建造自己的奇幻世界"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="13sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@id/tv_app_messages_1"
+                    >
+                    <Button
+                        android:id="@+id/btm_get_1"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="$6.00"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_getbg"
+                        android:layout_toRightOf="@id/tv_app_message_1"
+                        android:layout_gravity="center"
+
+                        >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App内购买项目"
+                        android:textSize="11dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="60dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_below="@id/Rlayout_app1"
+                android:layout_marginTop="10dp"
+                >
+            </View>
+
+        </LinearLayout>
+
+
+        //app2 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_app1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/game_2"
+                    app:riv_corner_radius_bottom_left="50dp"
+                    app:riv_corner_radius_top_left="50dp"
+                    app:riv_corner_radius_bottom_right="50dp"
+                    app:riv_corner_radius_top_right="50dp"
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_app_messages_2"
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_app_message_2"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket Build"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="16sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_app_submessage_2"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="建造自己的奇幻世界"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="13sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_app_message_1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="50dp"
+                    >
+                    <Button
+                        android:id="@+id/btm_get_2"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="$6.00"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_getbg"
+                        android:layout_toRightOf="@id/tv_app_message_1"
+                        android:layout_gravity="center"
+
+                        >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App内购买项目"
+                        android:textSize="11dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_below="@id/Rlayout_app1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                >
+            </View>
+
+        </LinearLayout>
+
+
+        //app3 内容
+        <LinearLayout
+            android:id="@+id/Rlayout_app3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Rlayout_app2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                //app图标
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv-3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/game_4"
+                    app:riv_corner_radius_bottom_left="50dp"
+                    app:riv_corner_radius_top_left="50dp"
+                    app:riv_corner_radius_bottom_right="50dp"
+                    app:riv_corner_radius_top_right="50dp"
+
+                    >
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_app_messages_3"
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_app_message_3"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket Build"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="16sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_app_submessage_3"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="建造自己的奇幻世界"
+                        android:textColor="@color/colorDarkBalck"
+                        android:textSize="13sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_app_message_1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="50dp"
+                    >
+                    <Button
+                        android:id="@+id/btm_get_3"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="$6.00"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_getbg"
+                        android:layout_toRightOf="@id/tv_app_message_1"
+                        android:layout_gravity="center"
+
+                        >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App内购买项目"
+                        android:textSize="11dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

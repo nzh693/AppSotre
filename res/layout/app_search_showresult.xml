@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+    //头部
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_5">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/search_appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="爆笑哈哈镜"
+                android:textColor="@color/colorDeepBalck"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/search_appDecs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30种免费特效"
+                android:textColor="@color/colorDarkBalck"
+                android:layout_marginTop="4dp"
+                android:textSize="13dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                >
+
+                <ImageView
+                    android:id="@+id/search_level1"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stars_balck">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/search_level2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stars_balck">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/search_level3"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stars_balck">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/search_level4"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stars_balck">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/search_level5"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stars_balck">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/search_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="275"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="获取"
+                android:textColor="@color/colorBlue"
+                android:background="@drawable/button_getbg"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+
+            </Button>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="App内购买项目"
+                android:textSize="8dp"
+                android:layout_marginTop="5dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/search_showImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitXY"
+        app:riv_corner_radius_bottom_left="10dp"
+        app:riv_corner_radius_top_right="10dp"
+        app:riv_corner_radius_bottom_right="10dp"
+        app:riv_corner_radius_top_left="10dp"
+        android:src="@mipmap/search_re1">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+</LinearLayout>

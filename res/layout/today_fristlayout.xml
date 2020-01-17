@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--第一个Today展示布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/today_layout_first"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/RoundedImageView_image"
+            android:layout_width="370dp"
+            android:layout_height="450dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appbg_1"
+            app:riv_corner_radius_bottom_left="21dp"
+            app:riv_corner_radius_bottom_right="21dp"
+            app:riv_corner_radius_top_left="21dp"
+            app:riv_corner_radius_top_right="21dp">
+
+
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-450dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑最爱"
+            android:textSize="18sp"
+            android:textColor="@color/colorDarkBalck"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职场失意逆袭"
+            android:textSize="28sp"
+            android:textStyle=""
+            android:textColor="@color/colorDeepBalck"
+            android:layout_below="@id/tv_1"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终成救世摇滚巨星"
+            android:textSize="28sp"
+            android:textColor="@color/colorDeepBalck"
+            android:layout_below="@id/tv_2"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

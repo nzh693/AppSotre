@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--第二个Today展示布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:paddingRight="20dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:id="@+id/game_line_type_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/colorlitterDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            >
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速链接"
+            android:textColor="@color/colorDeepBalck"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            >
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/game_link_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定支付宝、微信支付或银联"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/game_link_1"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+            <TextView
+                android:id="@+id/game_link_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Store 家长指南"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/game_link_2"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+            <TextView
+                android:id="@+id/game_link_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进一步了解App内购买项目"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/game_link_3"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+            <TextView
+                android:id="@+id/game_link_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="儿童类App和游戏"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/game_link_4"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+            <TextView
+                android:id="@+id/game_link_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于个性化"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorDarkBalck"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/game_link_5"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+            <TextView
+                android:id="@+id/game_link_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轻松上手App Store"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

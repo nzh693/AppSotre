@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colorDarkBalck"
+        android:layout_marginBottom="8dp"
+        >
+
+    </View>
+
+    //抬头
+    <LinearLayout
+        android:id="@+id/Rlayout_tile_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/comment_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分及评论"
+            android:textColor="@color/colorDeepBalck"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/comment_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全部"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp"
+            android:layout_marginLeft="200dp"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/comment_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.6"
+                android:textColor="@color/colorDarkBalck"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="满分5分"
+                android:textColor="@color/colorDarkBalck"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="310dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/app_detail_sum"
+                android:layout_marginLeft="30dp"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18,747个评分"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                >
+
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    //评论
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_getbg"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/comment_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于在线备份的问题"
+            android:textSize="15dp"
+            android:textColor="@color/colorDeepBalck"
+            android:maxLines="1"
+            android:ellipsize="end"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/comment_tile"
+            android:layout_marginLeft="110dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一年前"
+                android:textSize="12dp"
+                android:textColor="@color/colorDarkBalck"
+                android:layout_gravity="right"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="六个月的小可爱"
+                android:textSize="12dp"
+                android:textColor="@color/colorDarkBalck"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                >
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/comment_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/comment_tile"
+            >
+            <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_star_yellow"
+            >
+           </ImageView>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_star_yellow"
+                android:layout_marginLeft="5dp"
+                >
+            </ImageView>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_star_yellow"
+                android:layout_marginLeft="5dp"
+                >
+            </ImageView>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_star_yellow"
+                android:layout_marginLeft="5dp"
+                >
+            </ImageView>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_star_yellow"
+                android:layout_marginLeft="5dp"
+                >
+            </ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="indesign学习不能再错过这个机会
+            2019找工作?跳槽?加薪?学习.
+            专业没选对,职场人的第二次选择机会!火热报名中!学习这些岗位人才紧
+            缺!0-4个月可学会!"
+            android:textSize="12dp"
+            android:maxLines="8"
+            android:ellipsize="end"
+            android:layout_below="@id/comment_stats"
+            android:layout_marginTop="10dp"
+            >
+
+        </TextView>
+
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/colorDarkBalck"
+        android:layout_marginTop="20dp"
+        >
+
+    </View>
+
+    //功能
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/comment_Functiontile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新功能"
+            android:textSize="20dp"
+            android:textColor="@color/colorDeepBalck"
+            android:maxLines="1"
+            android:ellipsize="end"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本历史记录"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlue"
+                android:layout_gravity="right"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一周前"
+                android:textSize="10dp"
+                android:textColor="@color/colorDarkBalck"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                >
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/comment_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/comment_Functiontile"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/colorDarkBalck"
+                android:text="版本6.31"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_Functioncontent"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_version"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingRight="30dp"
+            android:text="  北京时间11月23日，NBA官网公布了最新一期的MVP排行榜。上赛季的常规赛MVP字母哥仍然表现出色，继续处在领跑位置。湖人球星詹姆斯排名第二。20岁新星卢卡-东契奇状态火热，从上周的第九位升至本周的第三位。以下是具体排名"
+            android:textSize="12dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/comment_Functioncontent_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textSize="12dp"
+            android:textColor="@color/colorBlue"
+            android:layout_marginTop="94dp"
+            android:layout_marginLeft="340dp"
+            >
+        </TextView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

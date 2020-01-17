@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AppDetailImageActivity">
+
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@mipmap/detail_image_1"
+                android:scaleType="centerCrop"
+                >
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精选游戏"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorDarkBalck">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="泰坦：众神之战"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorDeepBalck">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="巨大的守护天使从天而降，在他身边，跟随者一群骁勇善战的剑士和女猎手，战场的另一端，迎接他们的则是希腊神话中的九巨头试炼海德拉..."
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:layout_marginTop="40dp"
+                    >
+
+
+                </TextView>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/detail_image_2"
+                    app:riv_corner_radius_bottom_left="15dp"
+                    app:riv_corner_radius_top_right="15dp"
+                    app:riv_corner_radius_bottom_right="15dp"
+                    app:riv_corner_radius_top_left="15dp"
+                    android:layout_marginTop="25dp"
+                    >
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="巨大的守护天使从天而降，在他身边，跟随者一群骁勇善战的剑士和女猎手，战场的另一端，迎接他们的则是希腊神话中的九巨头试炼海德拉...">
+                </TextView>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/detail_image_3"
+                    app:riv_corner_radius_bottom_left="15dp"
+                    app:riv_corner_radius_top_right="15dp"
+                    app:riv_corner_radius_bottom_right="15dp"
+                    app:riv_corner_radius_top_left="15dp"
+                    android:layout_marginTop="25dp"
+                    >
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="巨大的守护天使从天而降，在他身边，跟随者一群骁勇善战的剑士和女猎手，战场的另一端，迎接他们的则是希腊神话中的九巨头试炼海德拉...">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#E3E3E3"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/app_detail_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/app_gamehero"
+                        android:layout_marginTop="15dp"
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Two Dots"
+                        android:textSize="21dp"
+                        android:textColor="@color/colorBlue"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="益智解谜"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorDarkBalck"
+                        android:layout_marginTop="10dp"
+                        >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btm_get_1"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="获取"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/button_getbgbule"
+                        android:layout_marginTop="10dp"
+                        >
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App 内购买项目"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorDarkBalck"
+                        android:layout_marginTop="5dp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_getbg"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="25dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/app_detailshare"
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分享"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity="center_vertical"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/detail_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/app_exit"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="15dp"
+        >
+
+    </ImageView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

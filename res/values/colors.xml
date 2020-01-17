@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2292DD</color>
+    <color name="colorPrimaryDark">#E6E6E6</color>
+    <color name="colorAccent">#8a8a8a</color>
+    <color name="colorDeepBalck">#000000</color>
+    <color name="colorlitterBalck">#1A1A1A</color>
+    <color name="colorDarkBalck">#666666</color>
+    <color name="colorLucencyWhite">#EEEEEE</color>
+    <color name="colorBalckground">#BBBBBB</color>
+    <color name="colorlitterDark">#E6E6E6</color>
+    <color name="colorMaxlitterDark">#DDDDDD</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#1780C7</color>
+
+
+
+
+</resources>
